@@ -29,7 +29,7 @@ export default function EnvelopeStage({ onOpen }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="flourish-heart-tag">Faizan Ki Taraf Se ❤️</span>
+          <span className="flourish-heart-tag">Ahmed Ki Taraf Se ❤️</span>
         </motion.div>
 
         <motion.h1
@@ -104,7 +104,7 @@ export default function EnvelopeStage({ onOpen }) {
             <div className="insert-ornament-header">
               <span className="insert-hearts">❤️ ✨ ❤️</span>
               <h3>Wedding Invitation</h3>
-              <p className="insert-recipient">Sirf Hadia Ke Liye</p>
+              <p className="insert-recipient">Ahmed & Hadia • Ayesha & Faizan Ki Shaadi</p>
             </div>
             <div className="insert-seal-preview">
               <Sparkles size={16} className="text-gold" />

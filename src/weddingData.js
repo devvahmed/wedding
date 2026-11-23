@@ -1,8 +1,9 @@
 // Configuration and Content for the Royal Wedding Invitation
-// Customized in natural Roman Urdu exclusively for Hadia Noor from Muhammad Faizan
+// Customized in natural Roman Urdu exclusively for Hadia Noor from Muhammad Ahmed (BF)
+// Celebrating the wedding of Ayesha Sadiqa (Bride) & Muhammad Faizan (Groom)
 
 export const weddingData = {
-  // Couple details
+  // Couple getting married
   bride: {
     name: "Ayesha Sadiqa",
     fullName: "Ayesha Sadiqa",
@@ -15,7 +16,7 @@ export const weddingData = {
       "assets/A6.jpeg",
     ],
     fallbackPhoto: "assets/A2.jpeg",
-    tagline: "Khushiyon aur duaon bhara naya safar, jald hi shuru hone ja raha hai.",
+    tagline: "Khushiyon aur duaon bhara naya safar shuru hone ja raha hai.",
   },
 
   groom: {
@@ -24,14 +25,21 @@ export const weddingData = {
     title: "Dulha",
   },
 
+  // The Sender: Hadia's BF (Ahmed)
+  sender: {
+    name: "Muhammad Ahmed",
+    callName: "Ahmed",
+    role: "Hadia's Beloved",
+  },
+
   // Special Honored Guest & Beloved details (Hadia Noor)
   guest: {
     name: "Hadia Noor",
     salutation: "Meri Pyaari Hadia Noor ❤️",
     heroPhoto: "assets/H1.jpeg",
     personalMessage:
-      "Suno Hadia... Tum meri zindagi ka sab se pyara aur khoobsurat hissa ho. Yeh shaadi tumhare baghair bilkul adhuri hai. Maine hamesha har dua mein sirf tumhe manga hai, aur In shaa Allah bohot jald humara apna nikkah hoga aur tum meri dulhan banogi. Aaj ke iss din par tumhari muskurahat mere liye poori duniya hai!",
-    shortNote: "Faizan ke dil se, sirf tumhare liye...",
+      "Suno Hadia... Faizan aur Ayesha ki shaadi hum celebrate kar rahe hain, lekin tum meri zindagi ka sab se pyara aur anmol hissa ho. Yeh mehfil tumhare baghair bilkul adhuri hai. Maine hamesha har dua mein sirf tumhe manga hai, aur In shaa Allah bohot jald humara apna Nikkah hoga aur tum Ahmed ki dulhan banogi! Aaj ke iss din par tumhari muskurahat mere liye poori duniya hai!",
+    shortNote: "Ahmed ke dil se, sirf tumhare liye...",
   },
 
   // The 3 Date Scenes (First Date, Second Date, and Red Dress Dulhan Promise)
@@ -41,7 +49,7 @@ export const weddingData = {
       type: "image",
       src: "assets/first-date.jpeg",
       tag: "Scene 1 • First Date",
-      title: "Hamari First Date ❤️",
+      title: "Ahmed & Hadia Ki First Date ❤️",
       story:
         "Yaad hai yeh din? Jahan se humara yeh pyara safar shuru hua tha... wo halki si nervousness, wo meethi baatein, aur wo ehsaas ke tum mere liye kitni khaas ho.",
     },
@@ -61,7 +69,7 @@ export const weddingData = {
       tag: "Scene 3 • Mera Chand",
       title: "Mera Chand in Red Dress 🌹",
       story:
-        "Hadia, iss red dress mein tum qayamat lag rahi ho... Aur mera tumse pakka wada raha, In shaa Allah iss se bhi pyare aur khoobsurat lehangay mein main tumhe apni dulhan bana kar ghar laoon ga! ❤️💍",
+        "Hadia, iss red dress mein tum qayamat lag rahi ho... Aur Ahmed ka tumse pakka wada raha, In shaa Allah iss se bhi pyare aur khoobsurat lehangay mein main tumhe apni dulhan bana kar ghar laoon ga! ❤️💍",
     },
   ],
 
@@ -83,13 +91,13 @@ export const weddingData = {
       id: 3,
       image: "assets/H4.jpeg",
       title: "Mera Wada",
-      caption: "Main hamesha tumhara hath thaam kar chaloon ga, har khushi aur gham mein.",
+      caption: "Ahmed hamesha tumhara hath thaam kar chalay ga, har khushi aur gham mein.",
     },
     {
       id: 4,
       image: "assets/H6.jpeg",
       title: "Agli Baari Humari!",
-      caption: "Aaj tum mehman ban ke aa rahi ho, par jald hi tum Faizan ki dulhan banogi In shaa Allah! ❤️",
+      caption: "Aaj tum Faizan aur Ayesha ki shaadi mein aa rahi ho, par jald hi tum Ahmed ki dulhan banogi In shaa Allah! ❤️",
     },
   ],
 
@@ -115,6 +123,6 @@ export const weddingData = {
   // WhatsApp RSVP details
   rsvp: {
     whatsappNumber: "923001234567",
-    prefilledMessage: "Faizan! Tumhari Hadia ne tumhara special card dekh liya. I will definitely be there, and yes... agli baari humari hai! ❤️💍✨",
+    prefilledMessage: "Ahmed! Tumhari Hadia ne tumhara special card dekh liya. I will definitely be there, and yes... agli baari humari hai! ❤️💍✨",
   },
 };

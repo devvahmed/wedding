@@ -15,7 +15,7 @@ export default function CardStage({ onReplay, onOpenVideo }) {
   const [direction, setDirection] = useState(1);
 
   const cardTitles = [
-    "Faizan Ka Paighaam",
+    "Ahmed Ka Paighaam",
     "Dulhan Ayesha Sadiqa",
     "Hadia Ka Surprise",
     "Humari Dates & Videos",
@@ -166,10 +166,11 @@ export default function CardStage({ onReplay, onOpenVideo }) {
               exit="exit"
               className="card-page-motion-wrapper"
               style={{ perspective: 1200 }}
-              drag="x"
+              drag={activeSection === 2 ? false : "x"}
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.25}
               onDragEnd={(e, { offset, velocity }) => {
+                if (activeSection === 2) return;
                 const swipe = Math.abs(offset.x) * velocity.x;
                 if (swipe < -100 || offset.x < -60) handleNext();
                 else if (swipe > 100 || offset.x > 60) handlePrev();

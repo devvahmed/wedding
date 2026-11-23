@@ -39,7 +39,7 @@ export default function NikkahGameSection({ onNext }) {
   return (
     <div className="section-scroll-content">
       <div className="chapter-crest-wrap">
-        <span className="sub-flourish">Dil Ki Baat • Faizan & Hadia</span>
+        <span className="sub-flourish">Dil Ki Baat • Ahmed & Hadia</span>
       </div>
 
       <h2 className="section-title">
@@ -54,7 +54,7 @@ export default function NikkahGameSection({ onNext }) {
         </div>
 
         <p className="nikkah-question-text">
-          "Hadia, aaj hum iss shaadi ki khushiyan mana rahe hain... Lekin meri har dua tumse shuru hoti hai. In shaa Allah bohot jald humara apna Nikkah hoga! <strong>Will you be my forever bride?</strong>"
+          "Hadia, aaj hum Faizan aur Ayesha ki shaadi ki khushiyan mana rahe hain... Lekin meri har dua tumse shuru hoti hai. In shaa Allah bohot jald humara apna Nikkah hoga! <strong>Will you be Ahmed's forever bride?</strong>"
         </p>
 
         {/* Interactive Choice Buttons */}
@@ -93,13 +93,13 @@ export default function NikkahGameSection({ onNext }) {
               <h3 className="cert-title">Nikkah Promise Locked! 💍</h3>
 
               <div className="cert-names">
-                <span className="cert-name-groom">Muhammad Faizan</span>
+                <span className="cert-name-groom">Muhammad Ahmed</span>
                 <span className="cert-amp">&</span>
                 <span className="cert-name-bride">Hadia Noor</span>
               </div>
 
               <p className="cert-vow">
-                "Wada raha Hadia, har nakhra sar ankhon par aur har qadam par be-inteha mohabbat. Agli baari humari hogi In Shaa Allah!"
+                "Wada raha Hadia, Ahmed ka har nakhra sar ankhon par aur har qadam par be-inteha mohabbat. Agli baari humari hogi In Shaa Allah!"
               </p>
 
               <div className="cert-badge">

@@ -8,7 +8,7 @@ export default function WelcomeSection({ onNext }) {
     <div className="section-scroll-content">
       {/* Chapter Crest */}
       <div className="chapter-crest-wrap">
-        <span className="sub-flourish">Faizan Ke Dil Se...</span>
+        <span className="sub-flourish">Ahmed Ke Dil Se...</span>
       </div>
 
       {/* Hadia's Portrait with Soft Glowing Halo */}
@@ -49,7 +49,7 @@ export default function WelcomeSection({ onNext }) {
       <div className="personal-message-box">
         <div className="romantic-tag-pill">
           <Sparkles size={13} className="text-gold" />
-          <span>Faizan Ka Special Paighaam</span>
+          <span>Ahmed Ka Special Paighaam</span>
         </div>
 
         <p className="personal-note-text">

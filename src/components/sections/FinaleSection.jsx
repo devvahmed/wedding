@@ -50,11 +50,11 @@ export default function FinaleSection({ onReplay }) {
         <h3 className="finale-recipient-name">Meri Pyaari Hadia Noor</h3>
         
         <p className="finale-letter-body">
-          "Yeh shaadi toh ek shuruwaat hai... Asal khushi aur intezaar toh mujhe uss din ka hai jab tum mere ghar meri dulhan ban kar aogi. Tumhari hansi, tumhari muskurahat, aur tumhara sath meri zindagi ka sab se bara tohfa hai."
+          "Yeh shaadi toh ek shuruwaat hai... Asal khushi aur intezaar toh mujhe uss din ka hai jab tum Ahmed ke ghar meri dulhan ban kar aogi. Tumhari hansi, tumhari muskurahat, aur tumhara sath meri zindagi ka sab se bara tohfa hai."
         </p>
 
         <div className="finale-promise-line">
-          <span>Faizan hamesha tumhara hai aur rahega. ❤️💍</span>
+          <span>Ahmed hamesha tumhara hai aur rahega. ❤️💍</span>
         </div>
       </div>
 
@@ -62,11 +62,11 @@ export default function FinaleSection({ onReplay }) {
       <div className="signature-box">
         <p className="sig-pre">Aapke aane ke muntazir,</p>
         <div className="signature-text">
-          <span className="sig-name">Faizan</span>
+          <span className="sig-name">Ahmed</span>
           <span className="sig-amp">&</span>
           <span className="sig-name">Hadia</span>
         </div>
-        <p className="family-note">Along with Ayesha Sadiqa & Family</p>
+        <p className="family-note">Along with Ayesha Sadiqa & Muhammad Faizan</p>
       </div>
 
       {/* Interactive Celebration Buttons */}

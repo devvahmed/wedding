@@ -11,11 +11,11 @@ export default function BrideSection({ onNext }) {
   return (
     <div className="section-scroll-content">
       <div className="chapter-crest-wrap">
-        <span className="sub-flourish">Dulhan & Dulha</span>
+        <span className="sub-flourish">The Couple • Ayesha & Faizan</span>
       </div>
 
       <h2 className="section-title">
-        <span className="title-pre">Introducing The Bride</span>
+        <span className="title-pre">Faizan Ki Dulhan</span>
         <span className="title-main">{weddingData.bride.fullName}</span>
       </h2>
 
@@ -78,7 +78,7 @@ export default function BrideSection({ onNext }) {
         </p>
         <div className="couple-union-pill">
           <Heart size={14} className="fill-blush text-blush" />
-          <span>With Muhammad Faizan & Family</span>
+          <span>Ayesha Sadiqa & Muhammad Faizan</span>
         </div>
       </div>
 

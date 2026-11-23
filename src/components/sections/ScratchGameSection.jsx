@@ -72,9 +72,26 @@ export default function ScratchGameSection({ onNext }) {
 
   useEffect(() => {
     initCanvas();
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    const preventDefaultTouch = (e) => {
+      e.stopPropagation();
+      if (e.cancelable) e.preventDefault();
+    };
+
+    canvas.addEventListener('touchstart', preventDefaultTouch, { passive: false });
+    canvas.addEventListener('touchmove', preventDefaultTouch, { passive: false });
+    canvas.addEventListener('touchend', preventDefaultTouch, { passive: false });
+
     const handleResize = () => initCanvas();
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      canvas.removeEventListener('touchstart', preventDefaultTouch);
+      canvas.removeEventListener('touchmove', preventDefaultTouch);
+      canvas.removeEventListener('touchend', preventDefaultTouch);
+      window.removeEventListener('resize', handleResize);
+    };
   }, [initCanvas]);
 
   const checkScratchPercentage = useCallback(() => {
@@ -161,21 +178,48 @@ export default function ScratchGameSection({ onNext }) {
   };
 
   const handlePointerDown = (e) => {
+    e.stopPropagation();
     isDrawingRef.current = true;
-    e.currentTarget.setPointerCapture(e.pointerId);
+    try {
+      e.currentTarget.setPointerCapture(e.pointerId);
+    } catch (err) {}
     scratchAtPoint(e.clientX, e.clientY);
   };
 
   const handlePointerMove = (e) => {
+    e.stopPropagation();
     if (!isDrawingRef.current) return;
     scratchAtPoint(e.clientX, e.clientY);
   };
 
   const handlePointerUp = (e) => {
+    e.stopPropagation();
     isDrawingRef.current = false;
     try {
       e.currentTarget.releasePointerCapture(e.pointerId);
     } catch (err) {}
+    checkScratchPercentage();
+  };
+
+  const handleTouchStart = (e) => {
+    e.stopPropagation();
+    if (e.touches && e.touches[0]) {
+      isDrawingRef.current = true;
+      scratchAtPoint(e.touches[0].clientX, e.touches[0].clientY);
+    }
+  };
+
+  const handleTouchMove = (e) => {
+    e.stopPropagation();
+    if (!isDrawingRef.current) return;
+    if (e.touches && e.touches[0]) {
+      scratchAtPoint(e.touches[0].clientX, e.touches[0].clientY);
+    }
+  };
+
+  const handleTouchEnd = (e) => {
+    e.stopPropagation();
+    isDrawingRef.current = false;
     checkScratchPercentage();
   };
 
@@ -218,6 +262,10 @@ export default function ScratchGameSection({ onNext }) {
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerUp}
             onPointerCancel={handlePointerUp}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            onTouchCancel={handleTouchEnd}
             aria-label="Gold scratch layer"
           />
 
@@ -232,7 +280,7 @@ export default function ScratchGameSection({ onNext }) {
                 <span className="success-icon">💍</span>
                 <h3 className="success-title">Surprise Revealed!</h3>
                 <p className="success-desc">
-                  Meri Hadia! Tum meri zindagi ki sab se haseen dua ho. Yeh shaadi tumhare baghair bilkul adhuri hai!
+                  Meri Hadia! Tum Ahmed ki zindagi ki sab se haseen dua ho. Yeh mehfil tumhare baghair bilkul adhuri hai!
                 </p>
               </div>
             </motion.div>

@@ -18,7 +18,7 @@ export default function DateScenesSection({ onNext }) {
   return (
     <div className="section-scroll-content">
       <div className="chapter-crest-wrap">
-        <span className="sub-flourish">Faizan & Hadia Ka Safar</span>
+        <span className="sub-flourish">Ahmed & Hadia Ka Safar</span>
       </div>
 
       <h2 className="section-title">
